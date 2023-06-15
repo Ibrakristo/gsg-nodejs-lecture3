@@ -12,10 +12,10 @@ validateResultMiddleware,
 (req,res)=>{
 const {x,y, operation} = req.body;
 switch(operation){
-    case "+" : res.send(x+y);break;
-    case "-" : res.send(x-y); break;
-    case "*" : res.send(x*y);break;
-    case "/" : res.send(x/y); break;
+    case "+" : res.json(x+y);break;
+    case "-" : res.json(x-y); break;
+    case "*" : res.json(x*y);break;
+    case "/" : res.json(x/y); break;
 } 
 
 }
